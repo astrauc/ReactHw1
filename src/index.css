@@ -30,6 +30,27 @@ header {
   border-color: rgb(50, 50, 50, 0.5);
 }
 
+.hobbies {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hobby {
+  margin: auto;
+  border: 2px solid aqua;
+  border-radius: 10px;
+}
+.heading {
+  color: white;
+  display:flex;
+  justify-content: center;
+}
+
+.center {
+  margin:auto;
+  padding: 10px;
+}
 body {
   padding-top: 100px;
   margin: 0;

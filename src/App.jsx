@@ -11,9 +11,9 @@ function NavBar() {
     <>
       <header>
         <nav>
-          <a href="index.html"><button class="head-button">Home</button></a>
+          <a href="index.html"><button className="head-button">Home</button></a>
           <a href="#"><button className="head-button">About</button></a>
-          <a href="https://www.apple.com/"><button class="head-button">Technical Experience</button></a>
+          <a href="https://www.apple.com/"><button className="head-button">Technical Experience</button></a>
           <a href="#"><button className="head-button">Projects</button></a>
           <a href="#"><button className="head-button">Contact</button></a>
 
@@ -27,12 +27,20 @@ function NavBar() {
 function Hobbies({ title, content }) {
   return (
     <>
-      <div>
-        <h2>{title}</h2>
-        <p> {content}</p>
+      <div className="hobby">
+        <h2 className="center">{title}</h2>
+        <p className="center"> {content}</p>
       </div>
     </>
 
+  )
+}
+
+function Heading(){
+  return (
+    <>
+      <h1 className="heading"> Here are some hobbies of mine</h1>
+    </>
   )
 }
 function App() {
@@ -42,10 +50,14 @@ function App() {
       {(
         <>
           <NavBar />
-          {hobbiesList.map((element) => (
-            <Hobbies title={element.title} content={element.content} />
+          <Heading/>
+          <div className="hobbies">
+            
+            {hobbiesList.map((element) => (
+              <Hobbies title={element.title} content={element.content} />
 
-          ))}
+            ))}
+          </div>
 
 
         </>
