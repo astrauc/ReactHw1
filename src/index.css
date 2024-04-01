@@ -1,0 +1,37 @@
+header {
+  background-color: rgb(50, 50, 50, .7);
+  margin: 0;
+  text-align: center;
+  text-emphasis-color: blue;
+  padding: 0px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  height: 40px;
+
+}
+
+.head-button {
+  align-self: auto;
+  color: rgb(150,150,150,1);
+  width: 19%;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  border-radius: 0;
+  background-color: rgb(50, 50, 50, 0);
+  border-color: rgb(50, 50, 50, 0);
+ 
+}
+
+.head-button:hover {
+  background-color: rgb(50, 50, 50, 0.5);
+  border-color: rgb(50, 50, 50, 0.5);
+}
+
+body {
+  padding-top: 100px;
+  margin: 0;
+  background-color: black;
+}
